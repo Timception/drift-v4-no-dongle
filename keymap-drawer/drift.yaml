@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: drift}
 layers:
-  base: [ESC, '`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', Ctl+C, TAB, Q, W, E, R, T, Y, U, I, O, P, '[', ']', LGUI, CAPS, A, S, D, F, G, H, J,
-    K, L, ;, '''', ENTER, LCTRL, LALT, Z, X, C, V, B, Ctl+V, \, N, M, ',', ., /, BACKSPACE, DEL, LSHFT, SPACE, lower, raise, SPACE]
+  base: [ESC, '`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', Ctl+C, TAB, Q, '&kpws W', E, R, T, Y, U, I, O, P, '[', ']', LGUI, CAPS, '&kpad A',
+    '&kpws S', '&kpad D', F, G, H, J, K, L, ;, '''', ENTER, LCTRL, LALT, Z, X, C, V, B, Ctl+V, \, N, M, ',', ., /, BACKSPACE, DEL, LSHFT, SPACE, lower, raise, SPACE]
   lower:
   - ESC
   - '`'
@@ -31,7 +31,7 @@ layers:
   - P
   - '['
   - \
-  - LGUI
+  - {t: ▽, type: trans}
   - CAPS
   - A
   - S
@@ -40,13 +40,13 @@ layers:
   - G
   - H
   - J
-  - '&mkp LCLK'
-  - '&mkp RCLK'
+  - K
+  - L
   - ;
   - UP ARROW
   - ENTER
-  - LCTRL
-  - LALT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Z
   - X
   - C
@@ -95,7 +95,7 @@ layers:
   - P
   - '&msc SCRL_DOWN'
   - '&mkp MCLK'
-  - LGUI
+  - {t: ▽, type: trans}
   - CAPS
   - A
   - S
@@ -109,8 +109,8 @@ layers:
   - '&mkp LCLK'
   - '&mmv MOVE_UP'
   - '&mkp RCLK'
-  - LCTRL
-  - LALT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Z
   - X
   - C
@@ -159,7 +159,7 @@ layers:
   - P
   - '&msc SCRL_DOWN'
   - '&mkp MCLK'
-  - LGUI
+  - {t: ▽, type: trans}
   - CAPS
   - A
   - S
@@ -173,8 +173,8 @@ layers:
   - '&mkp LCLK'
   - '&mmv MOVE_UP'
   - '&mkp RCLK'
-  - LCTRL
-  - LALT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Z
   - X
   - C
