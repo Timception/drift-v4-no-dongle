@@ -1,0 +1,25 @@
+manifest:
+  remotes:
+    - name: driftkeyboard
+      url-base: https://github.com/driftkeyboard
+      
+  projects:
+    - name: zmk
+      remote: driftkeyboard
+      revision: v0.3.0
+      import: app/west.yml
+    - name: zmk-pmw3610-driver-badjeff
+      remote: driftkeyboard
+      revision: main
+  self:
+    path: config
+
+
+
+
+
+
+
+
+
+
