@@ -72,12 +72,13 @@
 
 
 &trackball_split_listener { // local trackball input split device child node, receiving events from the peripheral and raising them locally
-	compatible = "zmk,input-listener";
 	status = "okay";
-    input-processors = <&am_temp_layer 4 659>;   /* <- guarded automouse: layer 4 for 0.659s */
+    	input-processors = 
+		    //<&pointer_accel>;
+			<&pointer_accel>,
+			<&am_temp_layer 4 659>;   /* <- guarded automouse: layer 4 for 0.659s */
 	scroll {
 		layers = <5 7>; // SCROLL
-		process-next;
 		input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
             <&zip_xy_scaler 1 16>,
