@@ -1,15 +1,15 @@
 manifest:
   remotes:
-    - name: driftkeyboard
-      url-base: https://github.com/driftkeyboard
+    - name: timception
+      url-base: https://github.com/timception
       
   projects:
     - name: zmk
-      remote: driftkeyboard
+      remote: timception
       revision: v0.3.0
       import: app/west.yml
     - name: zmk-pmw3610-driver-badjeff
-      remote: driftkeyboard
+      remote: timception
       revision: main
   self:
     path: config
