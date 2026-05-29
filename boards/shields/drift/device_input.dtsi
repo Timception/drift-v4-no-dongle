@@ -16,7 +16,8 @@
         };
     };
 
-    trackball_split_listener: trackball_split_listener {  // interface to monitor split input                
+    trackball_split_listener: trackball_split_listener {  // interface to monitor split input   
+		compatible = "zmk,input-listener";
         device = <&trackball>;  // link to the trackball split node
 		status = "disabled";  // not active by default, safe for keymaps
     };
