@@ -10,7 +10,7 @@
 
 / {
     chosen {
-        //zephyr,display = &oled;
+        zephyr,display = &oled;
 		zmk,kscan = &kscan0;
 		zmk,physical-layout = &drift_7col_layout;
     };
