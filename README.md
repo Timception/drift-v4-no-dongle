@@ -130,6 +130,7 @@ This project makes use of code and ideas from the following repositories:
 - [ufan/zmk](https://github.com/ufan/zmk) (MIT License) – Original ZMK base and PMW3610 work  
 - [badjeff/zmk-pmw3610-driver](https://github.com/badjeff/zmk-pmw3610-driver) – driver implementation for ZMK  
 - [caksoylar](https://github.com/caksoylar/keymap-drawer) (MIT License) - Keymap Drawer  
+- [nonpawite](https://github.com/nonpawite/drift-v4-no-dongle/tree/main) - Bluetooth Power Optimization, very thankful for this  
 
 All third-party code remains under their original licenses.  
 
